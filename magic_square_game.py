@@ -151,11 +151,7 @@ class MagicSquareGame:
                     st.error(f"**{target}**")
                 else:
                     st.info(f"**{target}**")
-        
-        # Header for row targets column
-        with header_cols[5]:
-            st.markdown("**Rows**")
-        
+                
         # Grid rows
         for i in range(5):
             row_cols = st.columns([1, 1, 1, 1, 1, 0.8])  # Match header layout exactly
